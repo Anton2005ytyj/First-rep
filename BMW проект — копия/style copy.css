@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&family=Itim&family=Uchen&display=swap');
+
+body {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+header {
+    background-color: #1C271E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logoimg {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: black;
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.iconimg {
+    width: 10%;
+    margin-right: 30px;
+}
+
+.footer2 {
+    background-color: #1C271E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.footer1 {
+    background-color: #293329;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.menuful {
+    flex-direction: column;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menuf {
+    width: 30%;
+}
+
+.menufa {
+    text-decoration: none;
+    color: white;
+}
+
+.rezra {
+    width: 20%;
+    margin-top: 3%;
+}
+
+.tel {
+    width: 20%;
+    margin-top: 3%;
+}
+
+li {
+    margin-top: 15px;
+}
+
+.picture {
+    width: 30%;
+    background-image: url(images/2022-bmw-m5-cs-front-view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    background: #424038;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+main img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.slick-slider{
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel__item {
+    display: flex !important;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.M5CS {
+    background-image: url(images/2022-bmw-m5-cs-front-view.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btnM5CS {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    background-color: rgba(21,21,21,0.01);
+}
+
+.M5CSall {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 80vh;
+    padding-left: 25px;
+}
+
+.M720 {
+    background-image: url(images/maxresdefault.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btnM720 {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    background-color: rgba(21,21,21,0.01);
+}
+
+.M720all {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 80vh;
+    padding-left: 25px;
+}
+
+h1 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+
+.nal {
+    background-color: #424038;
+    margin: 0;
+    padding: 0;
+}
+
+.bmw4 {
+    width: 100%;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.bmw41 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.bmw42 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmw43 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwm {
+    width: 100%;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.bmwm4 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwm5 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwm8 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmw7andx {
+    width: 100%;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.bmw7 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwx5 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwx7 {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwixandxm {
+    width: 100%;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.bmwx5m {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwx6m {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwix {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.bmwbtn {
+    background-color: rgba(21,21,21,0.01);
+    color: black;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bmwbtn:hover {
+    border: black 1px solid;
+    border-radius: 3px;
+}
+
+.bmw4a:hover {
+    color: black;
+    text-decoration: none;
+}
+.bmw4a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+.inner {
+    padding: 1em 0 0 0;
+    width: 60%;
+    height: auto;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner {
+        padding-top: calc(50px + 2em);
+    }
+
+    .inner p {
+        margin: 0
+    }
+}

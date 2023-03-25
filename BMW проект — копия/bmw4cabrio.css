@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&family=Itim&family=Uchen&display=swap');
+
+body {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+header {
+    background-color: #1C271E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logoimg {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: black;
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.iconimg {
+    width: 13%;
+    margin-right: 30px;
+}
+
+.footer2 {
+    background-color: #1C271E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.footer1 {
+    background-color: #293329;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.menuful {
+    flex-direction: column;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menuf {
+    width: 30%;
+}
+
+.menufa {
+    text-decoration: none;
+    color: white;
+}
+
+.rezra {
+    width: 20%;
+    margin-top: 3%;
+}
+
+.tel {
+    width: 20%;
+    margin-top: 3%;
+}
+
+li {
+    margin-top: 15px;
+}
+
+.picture {
+    width: 30%;
+    background-image: url(images/2022-bmw-m5-cs-front-view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.bmw4foto {
+    background-image: url(images/4scabrio.jpg);
+    padding: 500px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    background-color: white;
+    color: black;
+    padding: 50px;
+}
+ 
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+
+.infop {
+    font-size: 2em;
+    text-align: justify;
+}
+
+.infop1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.foto3 {
+    margin-left: 5px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+img {
+    transition: transform 1s;
+}

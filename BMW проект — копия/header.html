@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="anime.js"></script>
+
+    <title>Document</title>
+    <style> 
+        body {
+            font-family: 'Abel', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        header {
+    background-color: #1C271E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.logoimg {
+    width: 50%;
+    padding: 20px;
+}
+        .menu {
+            width: 30%;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+a {
+    color: black;
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.iconimg {
+    width: 10%;
+    margin-right: 30px;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: 20px;
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logoimg {
+    width: 35%;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logoimg" src="images/BMW_White_Logo.svg">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="menu_item">
+                Новости BMW
+            </div>
+            <div class="menu_item">
+                Автомобили
+            </div>
+            <div class="menu_item">
+                О нас
+            </div>
+        </div>
+        <div class="icon">
+            <img class="iconimg" src="images/3844432_magnifier_search_zoom_icon.png">
+            <img class="iconimg" src="images/3643744_location_mark_needle_pin_pricker_icon.png">
+            <img class="iconimg" src="images/622414_buy_cart_shopping_basket_ecommerce_icon.png">
+            <a href = "user.html"><img class="iconimg" src="images/9104273_person_user_people_profile_account_icon.png"></a>
+        </div>
+        <div class="menu_small_icon">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+        <div class="menu-small">
+            <div class="menu_small_item">
+                Новости BMW
+            </div>
+            <div class="menu_small_item">
+                Автомобили
+            </div>
+            <div class="menu_small_item">
+                О нас
+            </div>
+            <div class="menu_small_item">
+                <img class="iconimg" src="images/3844432_magnifier_search_zoom_icon.png">
+            </div>
+            <div class="menu_small_item">
+                <img class="iconimg" src="images/3643744_location_mark_needle_pin_pricker_icon.png">
+            </div>
+            <div class="menu_small_item">
+                <img class="iconimg" src="images/622414_buy_cart_shopping_basket_ecommerce_icon.png">
+            </div>
+            <div class="menu_small_item">
+                <a href = "user.html"><img class="iconimg" src="images/9104273_person_user_people_profile_account_icon.png"></a>
+            </div>
+        </div>
+    </header>
+<script>
+    let condition = true;
+
+function forwards() {
+    anime({
+        targets: '.menu-small',
+        translateX: ['0', '100%'],
+        backgroundColor: ['white', 'black'],
+        color: 'white',
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+
+    anime({
+        targets: '.menu_small_icon',
+        rotate: 90,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+    anime({
+        targets: '.stick',
+        rotate: 180,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+    condition = false
+}
+
+function backwards() {
+    anime({
+        targets: '.menu-small',
+        translateX: ['100%', '0'],
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+    anime({
+        targets: '.menu_small_icon',
+        rotate: 0,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+    anime({
+        targets: '.stick',
+        rotate: 0,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        duration: 1000,
+        loop: false
+    });
+    condition = true;
+}
+
+$('.menu_small_icon').click(function () {
+    if (condition) {
+        forwards();
+    } else {
+        backwards();
+    }
+});
+
+let start = 0;
+let end = 0;
+$('.container').on('touchstart', function (event) {
+    start = event.originalEvent.touches[0].pageX;
+});
+$('.container').on('touchend', function (event) {
+    end = event.originalEvent.changedTouches[0].pageX;
+    if (end - start >= 100 && condition) {
+        forwards();
+    } else if (start - end >= 100 && !condition) {
+        backwards();
+
+    }
+});
+</script>
+</body>
+</html>
